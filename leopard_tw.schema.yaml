@@ -3,9 +3,10 @@
 
 schema:
   schema_id: leopard_tw
-  name: 豹码·臺標簡碼
+  name: 豹碼·臺標簡碼
   version: 20231001
   author:
+    - 码表作者 荒
     - 發明人 朱宇浩
     - Rime方案 <https://shurufa.app/zht>
     - 官方QQ群 735728797
@@ -159,8 +160,8 @@ translator:
   preedit_format: []
   comment_format:
     - "xform/^~/ /"
-  disable_user_dict_for_patterns:
-    - "^z.*$"
+  #disable_user_dict_for_patterns:
+  #  - "^z.*$"
 
 zaoci:
   __include: translator
@@ -185,7 +186,7 @@ history:
 
 reverse_lookup:
   dictionary: yuhao_pinyin
-  prefix: "z"
+  prefix: "`"
   tips: 〔全拼簡拼反查〕
   closing_tips: 〔反查关闭〕
   preedit_format:
@@ -341,10 +342,11 @@ recognizer:
   import_preset: default
   patterns:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
-    reverse_lookup: "^z([a-z]+?)*$"
+    reverse_lookup: "^`([a-z]+?)*$"
     zaoci: "^[a-z]*`[a-z`]*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     number: "^[-+]?[0-9][,.:0-9]*[%]?$"
+    macro_unicode: "^/uni(/[a-zA-Z0-9]*)*$"
 
 # style:
 #   horizontal: false

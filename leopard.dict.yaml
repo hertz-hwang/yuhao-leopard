@@ -10,9 +10,9 @@ sort: original
 import_tables:
   # 以下是簡碼字詞，可注釋掉
   - yuhao/leopard.quick
-  #- yuhao/leopard.quick_words
+  - yuhao/leopard.quick_words
   # - yuhao/leopard_tc.quick
-  # - yuhao/leopard_sc.quick
+  #- yuhao/leopard_sc.quick
   # 以下是單字全碼
   - yuhao/leopard.full
   #- yuhao/leopard.compatible
@@ -24,11 +24,13 @@ import_tables:
   - yuhao/yuhao.private
   # 以下是全碼詞庫，可注釋掉
   - yuhao/leopard.words
-  - yuhao/leopard_tc.words
+  #- yuhao/leopard_tc.words
   - yuhao/leopard_sc.words
   # 以下是擴展詞庫
-  #- yuhao/yuhao.symbols
+  - yuhao/yuhao.symbols
   #- yuhao/yuhao.extended
+  # 字根
+  - yuhao/leopard_sc.short
 columns:
   - text
   - code

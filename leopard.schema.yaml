@@ -3,9 +3,10 @@
 
 schema:
   schema_id: leopard
-  name: 豹码·繁簡通打
+  name: 豹码·陆简优先
   version: 20231001
   author:
+    - 码表作者 荒
     - 發明人 朱宇浩
     - Rime方案 <https://shurufa.com>
     - 官方QQ群 735728797
